@@ -1,0 +1,213 @@
+/* header section */
+.main {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ring{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    border-bottom: 4px solid var(--color);
+    animation: rotate1 1.2s linear infinite;
+
+}
+
+.ring:nth-child(1){
+    --color:#f70707e5;
+    animation-name: rotate1;
+}
+@keyframes rotate1{
+    from{
+        transform:rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+    }
+    to{
+        transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+
+    }
+}
+.ring:nth-child(2){
+    --color:#6304fc;
+    animation-name: rotate2;
+}
+@keyframes rotate2{
+    from{
+        transform:rotateX(70deg) rotateZ(270deg);
+    }
+    to{
+        transform: rotateX(70deg)  rotateZ(630deg);
+
+    }
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 75%;
+    font-size: 200%;
+    color: red;
+    font-family: "Anton", sans-serif;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 150%;
+    margin-top: -4%;
+}
+
+span{
+    color: blue;
+}
+.container ul{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(3, 2, 8);
+}
+.container ul li a{
+    text-decoration: none;
+    color: rgb(5, 5, 7);
+    padding: 20px;
+}
+.container ul li a:hover{
+    border: 1px solid rgb(95, 14, 14);
+    background: #f44336;
+    transition: 2s;
+     border-radius: 3px;
+    padding: 7px;
+}
+.book{
+    border-radius: var(--rd, 5px);
+    box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
+    position: absolute;
+    right: 12%;
+    left: 40%;
+    bottom: -90%;
+    text-align: center;
+    background-color: rgb(242 242 242);
+    font-family: "Anton", sans-serif;
+    font-size:  xx-large; 
+    padding-bottom: 25%; 
+
+}
+.power{
+   color: rgb(26,43,109);
+   font-weight: bold;
+   font-size: 58px;
+   line-height: 1em;
+}
+.school{
+    position: absolute;
+    right: 15px;
+    text-align: start;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.div-line{
+    width: 100px;
+    height: 4px;
+    background-color: #f44336;
+    position: absolute;
+    left: 600px;
+    bottom: -300px;
+
+}
+.icon{
+    display: flex;
+    justify-content: end; 
+    position: relative;
+    left: -30px;
+    bottom: 400px;
+
+}
+.icon ul{
+    list-style: none;
+    font-size: 30px;
+
+}
+
+/* service section */
+
+.solar{
+    background-color: rgb( 26,43,109 );
+    margin-top: 14%;
+    width: 100%;
+    height: 250px;
+}
+
+.font-1{
+    line-height: 2em;
+    font-size: 70px;
+    color: rgb(255,255,255);
+    position: relative;
+    left: 20%;
+
+}
+.font-2{
+    line-height: 2em;
+    font-size: 20px;
+    color: rgb(255,255,255);
+    position: relative;
+    left: 20%;
+    bottom: 60px;
+
+}
+.panel-1{
+    float: left;
+    width: 400px; 
+    padding: 9px;
+    flex-basis: 30%; 
+    border-radius: 20px; 
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px; 
+    margin-right: 20px;
+
+  }
+  .panel-2{
+    background: transparent;
+    height: 100%;
+    width: 98%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  } 
+  .panel-2:hover{
+    background: rgba(226,0,0,0.7);
+    text-align: center;
+  }
+  .img-container::after {
+    clear: both;
+    display: table;
+  }
+  .panel-1 img{
+    width: 550px;
+    height: 300px;
+    border-radius: 3%;
+  }
+  .panel-2 h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .panel-2 h3 a {
+    color: blue;
+    text-decoration: none;
+  }
+  .panel-2:hover h3{
+    bottom: 40%;
+    opacity: 1;
+  } 
+  
